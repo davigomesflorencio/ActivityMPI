@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
         MPI_Scatter(m1, local * m2_l, MPI_DOUBLE, bufferlocal, local * m2_l, MPI_DOUBLE, 0, MPI_COMM_WORLD);
 
         //Faz seu cálculo local.
-        //(local/m2_l) representa as linha da matriz local
+        //(local) representa as linha da matriz local
         double *calc_local = alocarMatriz(local, m2_c);
         
         int i, j, k;
