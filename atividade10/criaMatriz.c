@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     {
         for (int j = 0; j < colunas; j++)
         {
-            double valor = i*j;
+            double valor = 1.0;
             if (j < colunas - 1)
                 fprintf(arquivo, "%05.4lf:", valor);
             else
